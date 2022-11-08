@@ -14,13 +14,28 @@ public class XyzXD {
     /**
      * @param args the command line arguments
      */
+    
+    //tÈrfogat
+    public static double terfogat(double sugar, double magassag) {
+        
+        double terf = sugar*sugar * Math.PI * magassag;
+        return terf;
+        
+    }
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner myObj = new Scanner(System.in);
-        System.out.println("K√©rem a henger sugar√°t: ");
+        System.out.println("KÈrem a henger sugar·t: ");
         int sugar = myObj.nextInt();
-        System.out.println("K√©rem a henger magass√°g√°t: ");
+        System.out.println("KÈrem a henger magass·g·t: ");
         int magassag = myObj.nextInt();
+        
+        
+        
+        
+        //tÈrfogat
+        
+        
        
     }
     
