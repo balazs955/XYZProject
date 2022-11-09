@@ -10,33 +10,29 @@ import java.util.Scanner;
  * @author user3
  */
 public class XyzXD {
-
-    /**
-     * @param args the command line arguments
-     */
-    
-    //tÈrfogat
+    public static double felszin(int sugar, int magassag)
+    {
+        double felszin = (2 * (sugar * sugar) * Math.PI) + (2 * sugar * Math.PI * magassag);  
+        return felszin;
+    } 
     public static double terfogat(double sugar, double magassag) {
         
         double terf = sugar*sugar * Math.PI * magassag;
         return terf;
         
-    }
+    }    
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner myObj = new Scanner(System.in);
-        System.out.println("KÈrem a henger sugar·t: ");
-        int sugar = myObj.nextInt();
-        System.out.println("KÈrem a henger magass·g·t: ");
-        int magassag = myObj.nextInt();
-        
-        
-        
-        
-        //tÈrfogat
-        
-        
-       
+        System.out.println("K√©rem a henger sugar√°t: ");
+        int s = myObj.nextInt();
+        System.out.println("K√©rem a henger magass√°g√°t: ");
+        int m = myObj.nextInt();
+        System.out.println("A henger t√©rfogata: " + terfogat(s,m));
+        System.out.println("A henger felsz√≠ne: " + felszin(s,m));
     }
     
 }
